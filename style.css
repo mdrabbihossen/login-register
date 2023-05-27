@@ -78,7 +78,6 @@ header {
 .card {
   position: relative;
   width: 400px;
-  height: 450px;
   background: transparent;
   backdrop-filter: blur(0.8rem);
   border: 2px solid #fff;
@@ -89,8 +88,13 @@ header {
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease-out;
+  opacity: 0;
+  transform: scale(1.1);
 }
-
+.card.show {
+  opacity: 1;
+  transform: scale(1);
+}
 /* auth section  */
 section {
   padding: 2.5rem;
@@ -184,4 +188,13 @@ form button {
   cursor: pointer;
   color: #16116a;
   font-weight: 600;
+}
+.container-form .register-card {
+  display: none;
+}
+.container-form.show-register .register-card {
+  display: block;
+}
+.container-form.show-register .login-card {
+  display: none;
 }
