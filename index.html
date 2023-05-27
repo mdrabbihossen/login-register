@@ -7,6 +7,11 @@
     <title>Login and Register</title>
     <!-- css  -->
     <link rel="stylesheet" href="style.css" />
+    <!-- box icons  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -26,7 +31,34 @@
       <div class="card">
         <div class="container-form">
           <!-- login card  -->
-          <section class="login-card"></section>
+          <section class="login-card">
+            <h2>Login</h2>
+            <form action="">
+              <!-- email  -->
+              <div class="input-box">
+                <span class="icon-box"><i class="bx bx-envelope"></i></span>
+                <input type="email" required />
+                <label>Email</label>
+              </div>
+              <!-- password -->
+              <div class="input-box">
+                <span class="icon-box"><i class="bx bx-lock-alt"></i></span>
+                <input type="password" required />
+                <label>Password</label>
+              </div>
+              <!-- recovery-pass -->
+              <div class="recovery-pass">
+                <label for=""><input type="checkbox" />Remember Me</label>
+                <a href="">Recover Password</a>
+              </div>
+              <!-- submit button  -->
+              <button type="submit">Login</button>
+              <!-- or register  -->
+              <div class="register">
+                <p>Don't have an account? <a href="">Register</a></p>
+              </div>
+            </form>
+          </section>
           <!-- login card end  -->
         </div>
       </div>
